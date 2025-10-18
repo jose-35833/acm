@@ -1,0 +1,45 @@
+churchhub/
+│
+├── index.php                → Homepage (church intro, sermons preview, events)
+├── about.php                → About the church
+├── contact.php              → Contact form
+├── login.php                → Shared login for Admins & Members
+├── register.php             → Register (members only)
+│
+├── includes/
+│   ├── db.php               → Database connection
+│   ├── functions.php        → Shared helper functions (logging, sanitization, etc.)
+│   ├── header.php           → Reusable header (public)
+│   ├── footer.php           → Reusable footer (public)
+│
+├── admin/
+│   ├── index.php            → Admin dashboard
+│   ├── includes/
+│   │   ├── header.php       → Reusable header (admin)
+│   │   ├── sidebar.php      → Admin-only sidebar
+│   │   └── footer.php       → Footer (admin)
+│   ├── manage_members.php   → View, edit, promote/demote members
+│   ├── manage_events.php    → Add/edit/delete church events
+│   ├── manage_sermons.php   → Add/edit/delete sermons (video, text, link)
+│   ├── messages.php         → View member messages
+│   ├── announcements.php    → Post announcements for all users
+│   ├── view_logs.php        → Activity logs for transparency
+│   ├── settings.php         → General church/system settings
+│   └── profile.php          → Admin profile management
+│
+├── member/
+│   ├── index.php            → Member dashboard
+│   ├── includes/
+│   │   ├── header.php       → Member header
+│   │   ├── sidebar.php      → Member sidebar
+│   │   └── footer.php       → Footer (member)
+│   ├── profile.php          → Edit personal info
+│   ├── messages.php         → Send messages to admins
+│   ├── my_events.php        → View/join church events
+│   ├── announcements.php    → View church announcements
+│   └── sermons.php          → View sermons (uploaded by admin)
+│
+└── assets/
+    ├── css/
+    ├── js/
+    ├── images/
